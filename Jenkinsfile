@@ -27,7 +27,7 @@ def utils = new io.fabric8.Utils()
 node {
   def envStage = utils.environmentNamespace('staging')
 
-  git 'https://gogs.scm.rabbies.com/andrew.sykes/web-test-1.git'
+  git 'https://github.com/Rabbies/web-test-1.git'
 
   echo 'NOTE: running pipelines for the first time will take longer as build and base docker images are pulled onto the node'
   kubernetes.pod('buildpod').withImage('fabric8/maven-builder')

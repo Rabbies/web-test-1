@@ -3,7 +3,7 @@ pipeline: "workflows/maven/CanaryReleaseAndStage/Jenkinsfile"
 buildName: "web-test-1"
 codeReview: false
 links:
-  Git: "https://gogs.scm.rabbies.com/andrew.sykes/web-test-1.git"
+  Git: "https://github.com/Rabbies/web-test-1.git"
   Job: "http://192.168.99.100:32131/job/web-test-1"
   Staging: "http://10.0.0.4:80/kubernetes/pods?namespace=default-staging"
   Testing: "http://10.0.0.4:80/kubernetes/pods?namespace=default-testing"
