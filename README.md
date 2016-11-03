@@ -30,8 +30,8 @@ We created this project with the following steps
        ```
 
  1. Added a simple Spring Boot sample application from: <https://spring.io/guides/gs/validating-form-input/> to make the application do something when we want to test it.
- 1. ``TODO:`` use Gradle instead of Maven if possible
  1. ``TODO:`` Make the project managed by F8 CI
+ 1. ``TODO:`` use Gradle instead of Maven if possible
 
 **Notes:**
  1. **Thymeleaf** seems to be the preferred templating engine, especially when working with forms. **Freemarker** could also be used as described for example [here](https://hellokoding.com/spring-boot-hello-world-example-with-freemarker/), but I couldn't find a way to map forms to objects like in case of Thymeleaf. So Freemarker might be a better choice in case of RESTful services, or in case when need to expose data into HTML format, in general when no form handling is needed, as Freemarker syntax is simpler than Thymeleaf.
