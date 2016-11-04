@@ -1,0 +1,15 @@
+---
+pipeline: "workflows/maven/CanaryReleaseStageAndApprovePromote/Jenkinsfile"
+buildName: "web-test-1"
+codeReview: false
+links:
+  Git: "https://github.com/Rabbies/web-test-1.git"
+  Job: "http://192.168.99.100:32192/job/web-test-1"
+  Production: "http://10.0.0.2:80/kubernetes/pods?namespace=default-production"
+  Staging: "http://10.0.0.2:80/kubernetes/pods?namespace=default-staging"
+  Testing: "http://10.0.0.2:80/kubernetes/pods?namespace=default-testing"
+environments:
+  Testing: "default-testing"
+  Staging: "default-staging"
+  Production: "default-production"
+useLocalFlow: true
